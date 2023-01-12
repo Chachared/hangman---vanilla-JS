@@ -1,0 +1,78 @@
+#word-to-find {
+    margin: 5px; 
+    padding: 5px;
+}
+
+#hidden-letters {
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+
+.found-not-found {
+    border: 2px solid seagreen;
+    border-radius: 20px 20px 20px 20px;
+}
+
+img {
+    float:inline-start;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    border: 5px solid seagreen;
+    border-radius: 20px 20px 20px 20px ;
+    margin-bottom: 10px;
+}
+
+section[id="letters"] li {
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    margin: 5px;
+    border: 2px solid grey;
+    background-color: lightgray;
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+section[id="letters"] {
+    border-radius: 20px 20px 20px 20px;
+    background-color: ghostwhite;
+}
+
+section[id="letters"] ul li[class="good"] {
+    background-color: green !important;
+}
+
+section[id="letters"] ul li[class="bad"] {
+    background-color: red !important;
+}
+
+section[id="letters"] ul li[class="disabled"] {
+    pointer-events: none;
+    cursor: pointer;
+}
+
+section[id="word-to-find"] > p.winner {
+    color:green;
+}
+
+section[id="word-to-find"] > p.winner:after {
+    content:'\01F603';
+}
+
+section[id="word-to-find"] > p.loser {
+    color:tomato;
+}
+
+section[id="word-to-find"] > p.loser:after {
+    content:'\01F625';
+}
+
+button {
+    border-radius: 20px 20px 20px 20px;
+    background-color: blueviolet;
+    color: white;
+}
